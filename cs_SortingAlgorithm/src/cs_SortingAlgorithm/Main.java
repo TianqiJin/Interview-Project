@@ -70,7 +70,7 @@ public class Main {
 		int rightBegin = center+1;
 		int begin = low;
 		while(low <= center && rightBegin <= right){
-			if(array[low] <= array[rightBegin])
+			if(array[low] < array[rightBegin])
 				temp[tmp++] = array[low++];
 			else
 				temp[tmp++] = array[rightBegin++];
